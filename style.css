@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+header nav {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-item1,
+.nav-item2,
+.nav-item3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-item1 h3 {
+    font-size: 19px;
+    font-weight: 500;
+    border: 1.5px solid black;
+    padding: 7px 14px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.nav-item1 i {
+    font-size: 19px;
+    font-weight: 500;
+    border: 1.5px solid black;
+    padding: 7px 14px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.nav-item2 h2 {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-spacing: 5px;
+}
+
+.nav-item2 i {
+    font-size: 24px;
+    font-weight: 500;
+    border: none;
+    border-radius: 50px;
+    background-color: orangered;
+    color: white;
+    padding: 5px 10px;
+}
+
+button {
+    border: 1.5px solid black;
+    border-radius: 50px;
+    padding: 7px 14px;
+    background-color: white;
+    font-size: 19px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#button1 {
+    background-color: orangered;
+    color: white;
+    border: none;
+}
+
+#button2 {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+h1 {
+    width: 100%;
+    font-size: 130px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    word-spacing: 20px;
+}
+
+img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 350px;
+    border-radius: 3rem;
+    object-fit: cover;
+}
+
+#image1 {
+    transform: translate(-50%, -50%) rotate(-30deg);
+}
+
+#image2 {
+    transform: translate(-50%, -50%) rotate(-20deg);
+}
+
+#image3 {
+    transform: translate(-50%, -50%) rotate(-10deg);
+}
+
+.icons {
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    right: 2%;
+    font-size: 35px;
+    gap: 10px;
+}
+
+.icons a {
+    text-decoration: none;
+    color: orangered;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 2%;
+}
+
+footer h3 {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+@media screen and (max-width:500px) {
+
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-item1,
+    .nav-item2,
+    .nav-item3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-item1 {
+        order: 2;
+    }
+
+    .nav-item2 {
+        order: 1;
+    }
+
+    .nav-item3 {
+        order: 3;
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    img {
+        top: 48%;
+        width: 250px;
+        height: 250px;
+        border-radius: 2rem;
+    }
+
+    .icons {
+        bottom: 25%;
+        right: 2%;
+        font-size: 35px;
+        gap: 10px;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+        position: absolute;
+        gap: 10px;
+    }
+
+    footer h3 {
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    #h3-1 {
+        order: 1;
+    }
+
+    #h3-2 {
+        order: 3;
+    }
+
+    #h3-3 {
+        order: 2;
+    }
+}
