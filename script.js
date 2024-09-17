@@ -75,35 +75,3 @@ button1.addEventListener("mouseout", () => {
     document.querySelector("#button1").style.color = "white";
     document.querySelector("#button1").style.border = "1.5px solid white";
 })
-
-const icon1 = document.querySelector(".icon1");
-icon1.addEventListener("mouseover", () => {
-    document.querySelector(".icon1").style.color = "black";
-})
-icon1.addEventListener("mouseout", () => {
-    document.querySelector(".icon1").style.color = "orangered";
-})
-
-const icon2 = document.querySelector(".icon2");
-icon2.addEventListener("mouseover", () => {
-    document.querySelector(".icon2").style.color = "black";
-})
-icon2.addEventListener("mouseout", () => {
-    document.querySelector(".icon2").style.color = "orangered";
-})
-
-const icon3 = document.querySelector(".icon3");
-icon3.addEventListener("mouseover", () => {
-    document.querySelector(".icon3").style.color = "black";
-})
-icon3.addEventListener("mouseout", () => {
-    document.querySelector(".icon3").style.color = "orangered";
-})
-
-const icon4 = document.querySelector(".icon4");
-icon4.addEventListener("mouseover", () => {
-    document.querySelector(".icon4").style.color = "black";
-})
-icon4.addEventListener("mouseout", () => {
-    document.querySelector(".icon4").style.color = "orangered";
-})
